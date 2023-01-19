@@ -9,4 +9,9 @@ export class HomePage {
 
   constructor() {}
 
+  buttonClick(){
+    console.log("Button function is working");
+    alert("This works!");
+  }
+
 }
