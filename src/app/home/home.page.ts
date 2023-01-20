@@ -7,11 +7,15 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
   inputVal : String | undefined
+  enterValue : String = "";
+  enterValue1 : String = "";
   constructor() {}
 
-  buttonClick(){
+  enterItem(){
     console.log("Button function is working");
-    alert("This works!");
+    this.enterValue1 = this.enterValue;
+    console.log(this.enterValue);    
+    console.log(this.enterValue1);    
   }
 
 }
