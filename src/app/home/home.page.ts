@@ -14,6 +14,7 @@ export class HomePage {
     console.log("Button function is working");
     if (this.taskName.length > 0) {
       let task = this.taskName;
+      console.log(task);
       this.taskList.push(task);
       this.taskName = '';
   }
