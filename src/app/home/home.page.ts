@@ -6,16 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  inputVal : String | undefined
-  enterValue : String = "";
-  enterValue1 : String = "";
+  taskName : any = "";
+  taskList : String[] = [];
   constructor() {}
 
   enterItem(){
     console.log("Button function is working");
-    this.enterValue1 = this.enterValue;
-    console.log(this.enterValue);    
-    console.log(this.enterValue1);    
+    if (this.taskName.length > 0) {
+      let task = this.taskName;
+      this.taskList.push(task);
+      this.taskName = '';
   }
-
 }
+
+deleteTask(index: number) {
+this.taskList.splice(index, 1);
+}
+}
+
+

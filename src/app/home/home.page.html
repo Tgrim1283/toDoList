@@ -16,10 +16,10 @@
   <div id="container">
     <ion-item>
       <ion-label position="stacked">A task you need to complete</ion-label>
-      <ion-input [(ngModel)]="enterValue1" placeholder="Enter text Here"></ion-input>
-      <ion-button (click) = "enterItem()">Add item to list!</ion-button>
-      <ion-label color="dark">{{enterValue1}}</ion-label>
+      <ion-input [(ngModel)]="taskName" placeholder="Enter task Here"></ion-input>
+      <ion-button color="primary" (click) = "enterItem()">Add item to list!</ion-button>
+      <ion-icon name="add"></ion-icon>
     </ion-item>
   </div>
-  {{enterValue1}}
+
 </ion-content>
