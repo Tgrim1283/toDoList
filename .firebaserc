@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "todolist-1e698": {
+      "hosting": {
+        "app": [
+          "todolist-1e698"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "todolist-1e698"
+  }
+}
